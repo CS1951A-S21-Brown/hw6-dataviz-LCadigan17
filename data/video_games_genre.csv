@@ -1,0 +1,73 @@
+,Publisher,Global_Sales,Genre
+0,Take-Two Interactive,211.07999999999996,Action
+1,Ubisoft,142.94000000000008,Action
+2,Activision,142.32999999999998,Action
+3,Nintendo,128.17999999999995,Action
+4,Warner Bros. Interactive Entertainment,118.23999999999992,Action
+5,Other,1008.4100000000002,Action
+0,Nintendo,35.709999999999994,Adventure
+1,Ubisoft,22.19,Adventure
+2,THQ,19.98,Adventure
+3,Disney Interactive Studios,17.759999999999998,Adventure
+4,Sony Computer Entertainment,13.549999999999999,Adventure
+5,Other,129.84999999999997,Adventure
+0,THQ,72.85999999999999,Fighting
+1,Namco Bandai Games,61.22,Fighting
+2,Nintendo,53.35000000000001,Fighting
+3,Capcom,33.01,Fighting
+4,Electronic Arts,31.389999999999997,Fighting
+5,Other,197.08000000000004,Fighting
+0,Nintendo,180.66999999999996,Misc
+1,Ubisoft,97.53000000000004,Misc
+2,Sony Computer Entertainment,80.80000000000004,Misc
+3,Activision,76.54999999999993,Misc
+4,Microsoft Game Studios,46.99000000000001,Misc
+5,Other,327.4200000000002,Misc
+0,Nintendo,427.21,Platform
+1,Sony Computer Entertainment,104.05999999999997,Platform
+2,Sega,60.83999999999999,Platform
+3,THQ,41.02000000000002,Platform
+4,Activision,33.40000000000001,Platform
+5,Other,164.84000000000003,Platform
+0,Nintendo,124.88000000000002,Puzzle
+1,Atari,21.589999999999996,Puzzle
+2,THQ,9.249999999999998,Puzzle
+3,Warner Bros. Interactive Entertainment,6.6499999999999995,Puzzle
+4,Hudson Soft,6.61,Puzzle
+5,Other,75.96999999999994,Puzzle
+0,Nintendo,151.29999999999995,Racing
+1,Electronic Arts,145.77,Racing
+2,Sony Computer Entertainment,110.56999999999998,Racing
+3,THQ,40.17,Racing
+4,Codemasters,34.62000000000002,Racing
+5,Other,249.61,Racing
+0,Nintendo,284.9,Role-Playing
+1,Square Enix,97.09000000000006,Role-Playing
+2,Bethesda Softworks,54.160000000000004,Role-Playing
+3,Namco Bandai Games,53.82000000000001,Role-Playing
+4,SquareSoft,52.589999999999996,Role-Playing
+5,Other,384.80999999999995,Role-Playing
+0,Activision,299.8699999999999,Shooter
+1,Electronic Arts,158.26000000000002,Shooter
+2,Microsoft Game Studios,95.46,Shooter
+3,Nintendo,69.72999999999999,Shooter
+4,Ubisoft,67.64999999999999,Shooter
+5,Other,346.4000000000002,Shooter
+0,Electronic Arts,89.52999999999999,Simulation
+1,Nintendo,85.27,Simulation
+2,Ubisoft,44.66999999999997,Simulation
+3,Konami Digital Entertainment,32.310000000000024,Simulation
+4,505 Games,22.24,Simulation
+5,Other,118.18000000000012,Simulation
+0,Electronic Arts,479.66999999999973,Sports
+1,Nintendo,218.00999999999993,Sports
+2,Konami Digital Entertainment,98.94999999999999,Sports
+3,Take-Two Interactive,76.76999999999997,Sports
+4,Activision,75.90999999999994,Sports
+5,Other,381.62000000000046,Sports
+0,Nintendo,27.349999999999998,Strategy
+1,Activision,17.700000000000003,Strategy
+2,Electronic Arts,14.079999999999998,Strategy
+3,Namco Bandai Games,11.829999999999998,Strategy
+4,Konami Digital Entertainment,10.99,Strategy
+5,Other,93.17000000000004,Strategy
