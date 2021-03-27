@@ -21,6 +21,22 @@
             <label for="fname">First name:</label>
             <input type="text" id="text_input" name="text_input" value = "2012"><br><br>
             <div id="graph2"></div><br/>
+             
+            <button type="button" class="btn btn-info" onclick="getPublisher('Action')">Action</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Adventure')">Adventure</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Fighting')">Fighting</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Misc')">Misc</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Platform')">Platform</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Puzzle')">Puzzle</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Racing')">Racing</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Role-Playing')">Role-Playing</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Shooter')">Shooter</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Simulation')">Simulation</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Sports')">Sports</button>
+            <button type="button" class="btn btn-info" onclick="getPublisher('Strategy')">Strategy</button>
+
+
+
         </div>
         <div class="col-lg-6">
             <div id="graph3"></div>
@@ -29,6 +45,10 @@
     <!--Feel free to add more JavaScript files as needed-->
     </script>
     <script type="text/javascript" src="constants.js"></script>
+    <script type="text/javascript" src="graph1.js"></script>
     <script type="text/javascript" src="graph2.js"></script>
+
+    <p>Note: most of the pie chart implementation was copied from <a href = "https://www.d3-graph-gallery.com/graph/pie_annotation.html">this tutorial</a> from the d3 homepage. I wasn't sure how to change the implementation to make it my own. The legend came from <a href= "https://www.d3-graph-gallery.com/graph/custom_legend.html">this tutorial</a>, also from d3. The bar charts came from the lab.</p> 
+
 </body>
 </html>
