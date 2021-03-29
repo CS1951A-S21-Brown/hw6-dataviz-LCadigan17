@@ -1,4 +1,4 @@
- let svg2 = d3.select("#graph2")
+ let svg2 = d3.select("#graph3")
     .append("svg")
     .attr("width", block_2_width)     // HINT: width
     .attr("height", block_2_height)     // HINT: height
@@ -24,6 +24,10 @@ function getPublisher(search_genre) {
         var dict = {};
         for(i = 0; i<data.length; i++){
             key = data[i]["Publisher"];
+            if(key != "Other"){
+                key = (1+i).toString()+". "+key;
+            }
+
             value = get_total_sales(data[i]);
             dict[key] = value;
         }
@@ -32,7 +36,8 @@ function getPublisher(search_genre) {
         
         var color = d3.scaleOrdinal()
             .domain(dict)
-            .range(d3.schemeSet2)
+            .range(d3.schemeSet1)
+        //console.log(color)
         var pie = d3.pie()
             .value(function(d) {return d.value; })
         var data_ready = pie(d3.entries(dict))
@@ -42,7 +47,7 @@ function getPublisher(search_genre) {
         
         a = margin.left;
         b = block_2_height/2;       
-
+      
         svg2
             .selectAll('mySlices')
             .data(data_ready)
@@ -51,16 +56,7 @@ function getPublisher(search_genre) {
             .attr('d', arcGenerator)
             .attr('fill', function(d){ return(  color(d.data.key) ) })
             .attr("transform",`translate(${a},${b})` )          
-        /*svg2
-            .selectAll('mySlices')
-            .data(data_ready)
-            .enter()
-            .append('text')
-            .text(function(d){ return d.data.key;  })
-            .attr("transform", function(d) { return "translate(" + special_centroid(arcGenerator,d,a,b)+ ")";  })
-            .style("text-anchor", "middle")
-            .style("font-size", 20)
-       */
+        
         circle_x = margin.left+block_2_width/4;
         text_x = circle_x+20;
         var place_function = function(d,i){
@@ -87,13 +83,13 @@ function getPublisher(search_genre) {
             .attr("text-anchor", "left")
             .style("alignment-baseline", "middle")
 
-        a = margin.left+graph_1_width/2;
-        b = -margin.top/2;       
+        a = margin.left;
+        b = margin.top/3;      
         svg2.append("text")
             .attr("transform",`translate(${a},${b})` )                
             .style("text-anchor", "middle")
             .style("font-size", 20)
-            .text("title");
+            .text("Top Publishers of "+search_genre);
     
     });
 }

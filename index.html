@@ -16,12 +16,34 @@
     <div class="row">
         <div class="col-lg-6">
             <div id="graph1"></div>
-            <button type="button" class="btn btn-info" onclick="setYear(0)">Search All Years</button>
+            <button type="button" class="btn btn-info" onclick="setYear(0)">Search All Time</button>
             <button type="button" class="btn btn-info" onclick="setYear(1)">Search Year</button>
-            <label for="fname">First name:</label>
+            <label for="fname">Year:</label>
             <input type="text" id="text_input" name="text_input" value = "2012"><br><br>
-            <div id="graph2"></div><br/>
-             
+            
+            <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            </p>
+            
+            <div id="graph2"></div>
+            <label for="fname">Search Region:</label>
+            <button type="button" class="btn btn-info" onclick="searchRegion('NA_Sales');">North American </button>
+            <button type="button" class="btn btn-info" onclick="searchRegion('EU_Sales');">Europe</button>
+            <button type="button" class="btn btn-info" onclick="searchRegion('JP_Sales');">Japan</button>
+            <button type="button" class="btn btn-info" onclick="searchRegion('Other_Sales');">Other</button>
+            <button type="button" class="btn btn-info" onclick="searchRegion('Global_Sales');">Global</button>
+           
+            <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            </p>
+            <div id="graph3"></div>
+            <label for="fname">Genre:</label>
             <button type="button" class="btn btn-info" onclick="getPublisher('Action')">Action</button>
             <button type="button" class="btn btn-info" onclick="getPublisher('Adventure')">Adventure</button>
             <button type="button" class="btn btn-info" onclick="getPublisher('Fighting')">Fighting</button>
@@ -34,12 +56,9 @@
             <button type="button" class="btn btn-info" onclick="getPublisher('Simulation')">Simulation</button>
             <button type="button" class="btn btn-info" onclick="getPublisher('Sports')">Sports</button>
             <button type="button" class="btn btn-info" onclick="getPublisher('Strategy')">Strategy</button>
-
-
-
         </div>
         <div class="col-lg-6">
-            <div id="graph3"></div>
+            
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
@@ -47,8 +66,49 @@
     <script type="text/javascript" src="constants.js"></script>
     <script type="text/javascript" src="graph1.js"></script>
     <script type="text/javascript" src="graph2.js"></script>
-
-    <p>Note: most of the pie chart implementation was copied from <a href = "https://www.d3-graph-gallery.com/graph/pie_annotation.html">this tutorial</a> from the d3 homepage. I wasn't sure how to change the implementation to make it my own. The legend came from <a href= "https://www.d3-graph-gallery.com/graph/custom_legend.html">this tutorial</a>, also from d3. The bar charts came from the lab.</p> 
-
+    <script type="text/javascript" src="graph3.js"></script>
+    <br>
+    <br>
+    <p>Note: most of the pie chart implementation was copied from <a href = "https://www.d3-graph-gallery.com/graph/pie_annotation.html">this tutorial</a> from the d3 homepage. I wasn't sure how to change the implementation to make it my own. The legend 
+    <br>came from <a href= "https://www.d3-graph-gallery.com/graph/custom_legend.html">this tutorial</a>, also from d3. The bar charts came from the lab.
+    </p> 
+    <br>
+    <br>
+    <br>
+    
+    <p>1. The first graph clearly is a bar graph that shows the top titles of the year. The higher-grossing titles are at the top and have the longest bars. As well, the rank of each title 
+    <br>is indicated on the left. There are no duplicate titles. To search a year, click on the button at the bottom of the screen. 
+    </p>
+    
+    <p>Next, I used a bar graph to show the most popular titles for the most common genres for each region. The region can be toggled using the buttons at the bottom. More 
+    <br> common genres are shown at the top, and color is constant for each genre. 
+    </p>    
+    
+    <p>Finally, I show the 5 most popular publishers for each genre. Genre can be toggled using buttons at the bottom. The graph contains an “other” section, which is all publishers
+    <br>not in the top five. Thus, you get a sense of how large the largest publishers are, relative to the entire industry. 
+    </p>    
+        
+    <br>
+    <br>
+    <p>2. D3 gave me great control over almost every aspect of the bar graph, from which elements to include (e.g. counts) to font size to color. D3 also nicely automated many 
+    <br>aspects of the bar / pie charts. The existence of helpful tutorials online makes d3 far more useful. 
+    </p> 
+    <br>
+    <br>
+    <p>3.  Mainly, certain tools are extremely nicely designed for certain visuals. Excel, for example, can help you create simple bar graphs extremely quickly and can also provide a 
+    <br> large number of other tools (such as trendlines) more easily than D3 can. 
+    </p>
+    <br>
+    <br>
+    <p>4. Color-blind users may struggle with the bar graph, since they may struggle to distinguish between sections. The yellow sections (which were created using D3’s default color 
+    <br> scheme) do not contrast well with a white background, making it difficult for users with poor vision. Blind users will not be able to see much of this information. To make it more
+    <br> accessible to blind people, I could have included a paragraph with a summary of the graph that a screen reader could access. 
+    </p> 
+    <br>
+    <br>
+    <p>5. Time was my biggest factor. There also are some tradeoffs, e.g. certain color-blind friendly color schemes may be ugly, certain useful features (like a slider) may be difficult 
+    <br> for people with assistive technology to use, and certain useful features (e.g. visualization in general) may be inaccessible to the blind.
+    </p>
+        
 </body>
 </html>
